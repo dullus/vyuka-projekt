@@ -5,9 +5,9 @@ Cvičenie je zamerané na pochopenie:
 - čo je server a ako môže poskytovať dáta
 - ako získať dáta dynamicky pomocou AJAX
 - ako pracovať so získanými dátami
+- advanced JS - moduly, bundling, building tools (Grunt)
 
-
-# Instalacia
+# Inštalácia
 ### Prerequisties
 
 * NodeJS 6.9+
@@ -26,19 +26,17 @@ npm install
 ```
 
 ### Compile
-Devel JS verzia s mapou pre DevTools
+Devel ES6 verzia s mapou pre DevTools
 ```shell
 grunt dev
 ```
 
-alebo produkčný JS bundle bez mapy
-
+alebo produkčný ES5 bundle bez mapy
 ```shell
 grunt
 ```
 
 ### Run
-
 zadajte URL http://localhost:3000
 
 ### Demo REST api
@@ -59,23 +57,21 @@ súbor `server/fixtures/rest/sw.json`
 * vysvetliť `import`
 * zakomentovať riadky
 ```javascript
-7 import {addressListFinal} from 'address/addressListFinal';
+07 import {addressListFinal} from 'address/addressListFinal';
 19 addressListFinal.init();
 ```
 * odkomentovať riadky
 ```javascript
-6 import {addressList} from 'address/addressList';
+06 import {addressList} from 'address/addressList';
 18 addressList.init();
 ```
-
 * rebuildnúť
 ```shell
 grunt dev
 ```
-
 * reload stránky
 
-## 2. src/js/address/addressList.js
+## 3. src/js/address/addressList.js
 
 * vyvetliť OOP modul v ES6
 * ukázať dáta http://localhost:3000/api/address/101
