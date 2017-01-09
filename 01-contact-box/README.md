@@ -3,6 +3,7 @@
 
 Cvičenie je zamerané na pochopenie:
 - ako postupovať pri realizácii zadania, rozdelenie na podúlohy: item, list, detail, editor
+- single page website, plusy a mínusy
 - fragmenty html stránky
 - normalizácia CSS, bootstrap
 - BEM názvoslovie tried v CSS
