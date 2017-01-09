@@ -1,0 +1,29 @@
+{
+    "address": [
+        {
+            "id": "1000",
+            "address": "14, Rue Vaugirard, Paris",
+            "postcode": "A000"
+        },
+        {
+            "id": "2000",
+            "address": "24, Rue Vaugirard, Paris",
+            "postcode": "B000"
+        },
+        {
+            "id": "3000",
+            "address": "34, Rue Vaugirard, Paris",
+            "postcode": "AAAX"
+        },
+        {
+            "id": "5000",
+            "address": "something there",
+            "postcode": "A700"
+        },
+        {
+            "id": "6000",
+            "address": "retype this",
+            "postcode": "EE00"
+        }
+    ]
+}

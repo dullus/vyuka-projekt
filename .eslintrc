@@ -1,0 +1,72 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "node": true,
+        "mocha": true,
+        "browser": true
+    },
+    "globals": {
+        "define": false,
+        "requirejs": false,
+        "require": false,
+        "module": false,
+        "TestCase": false,
+        "sinon": false,
+        "$": false,
+        "jQuery": false,
+        "assert": false,
+        "assertEquals": false,
+        "expect": false,
+        "fixture": false,
+        "Promise": false
+    },
+    "rules": {
+        "semi": [2, "always"],
+        "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+        "no-console": 0,
+        "valid-jsdoc": [1, {"prefer": {"returns": "return"}, "requireReturn": false, "requireParamDescription": true, "requireReturnDescription": false}],
+        "no-else-return": 1,
+        "no-eq-null": 2,
+        "no-floating-decimal": 2,
+        "no-multi-str": 0,
+        "no-process-env": 2,
+        "no-self-compare": 2,
+        "no-warning-comments": [2, { "terms": ["todo"], "location": "start" }],
+        "wrap-iife": [2, "outside"],
+        "no-catch-shadow": 2,
+        "no-use-before-define": [2, "nofunc"],
+        "brace-style": [2, "1tbs"],
+        "comma-style": [2, "last"],
+        "comma-dangle": [2, "never"],
+        "func-style": [1, "declaration"],
+        "no-lonely-if": 2,
+        "no-multiple-empty-lines": [2, {"max": 1}],
+        "no-nested-ternary": 2,
+        "no-underscore-dangle": 0,
+        "operator-assignment": [2, "always"],
+        "padded-blocks": [2, "never"],
+        "quote-props": [2, "as-needed"],
+        "quotes": [2, "single", "avoid-escape"],
+        "space-before-function-paren": [2, "never"],
+        "keyword-spacing": [2],
+        "space-before-blocks": [2, "always"],
+        "object-curly-spacing": [2, "never"],
+        "space-in-parens": [2, "never"],
+        "spaced-comment": [2, "always", {exceptions:["-","+","*"]}],
+        "max-len": [1, 120, 4],
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "eqeqeq": 2,
+        "strict": [1, "global"],
+        "eol-last": 2,
+        "new-cap": 1,
+        "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+        "one-var": [2, "never"],
+        "no-undef": 2
+    }
+}

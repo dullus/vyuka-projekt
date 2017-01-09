@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Book 01</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/normalize-reboot.css"></head>
+    <link rel="stylesheet" href="css/font.css"></head>
+    <link rel="stylesheet" href="css/contact-final.css"></head>
+</head>
+<body>
+    <header>
+        <h1>Star Wars Contact Book</h1>
+    </header>
+
+    <main>
+    </main>
+
+    <div class="contact" id="prototype">
+        <h3 class="contact__name">Anakin Skywalker <span class="contact__force">light</span></h3>
+        <div class="contact__body">
+            <img class="contact__picture" src="img/uploads/anakin-skywalker.jpg" alt="" />
+            <div class="contact__text">
+                <h4 class="contact__text-email">email: <a href="anakin@tatooine.com">anakin@tatooine.com</a></h4>
+                <h4 class="contact__text-homeworld">homeworld: <span>Tatooine</span></h4>
+                <h4 class="contact__text-species">species: <span>human</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clone() {
+            let element = $('#prototype').clone();
+            element.attr('id', '');
+            element.appendTo('main');
+        }
+        for(let i = 1; i < 6; i++) {
+            clone();
+        }
+    </script>
+</body>
+</html>

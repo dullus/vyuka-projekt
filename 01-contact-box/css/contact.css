@@ -1,0 +1,110 @@
+/*
+palette:
+========
+body-background #f5f5dc;
+contact-background #f0f8ff;
+contact-head #c0d6e4 rgb(192,214,228)
+text: #191970;
+highlight #fa8072 rgb(250,128,114)
+shadows rgba(0,0,0,0.12) rgba(0,0,0,0.24)
+*/
+
+body {
+    background: beige;
+}
+
+header h1 {
+    color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 732px) {
+    main {
+        max-width: 1024px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+.contact {
+    line-height: 1.2;
+    background: #fff;
+    color: #000;
+    margin: .5rem 1%;
+    min-width: 272px;
+}
+
+@media screen and (min-width: 732px) {
+    .contact {
+        width: 48%;
+    }
+}
+
+.contact:hover {
+}
+
+.contact__body {
+    padding: 10px;
+    font-size: 0.85rem;
+    display: flex;
+}
+
+.contact__picture {
+    max-height: 48px;
+}
+
+.contact__text {
+    padding-left: 10px;
+}
+
+.contact__name {
+    display: flex;
+    padding: 2px 10px;
+    background-color: lightgray;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.contact:hover .contact__name {
+    background: cyan;
+}
+
+.contact__text h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.contact__text h4 a,
+.contact__text h4 span {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact__text h4 a:hover {
+    text-decoration: underline;
+}
+
+.contact__force {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.contact__force--dark {
+    background-color: #191970;
+    color: #f0f8ff;
+}
