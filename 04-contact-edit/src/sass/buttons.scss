@@ -1,0 +1,75 @@
+/*
+transition()
+-----------------
+Creates a CSS3 transition property. Adds vendor prefixes automatically.
+
+#### @params
+`$val` *(string)*
+
+#### example
+`@include transition("color 0.3s ease-in-out");`
+*/
+@mixin transition( $val ) {
+    -moz-transition: unquote( $val );
+    -webkit-transition: unquote( $val );
+    transition: unquote( $val );
+}
+
+.link-box__button {
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: 0;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    @include transition("background-color 0.3s ease-in-out");
+    text-align: center;
+    color: $c-white;
+    text-decoration: none;
+    background-color: $c-black;
+
+    &:hover, &.active {
+        color: $c-white;
+        background-color: $c-light-black;
+    }
+}
+
+.link-box__input {
+    display: inline-block;
+
+    label {
+        color: $c-light-black;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    input {
+        padding: 10px 15px;
+        color: $c-light-black;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        display: inline-block;
+        width: 150px;
+    }
+}
+
+.error-label {
+    display: none;
+}
+
+input[type="text"].error,
+input[type="password"].error {
+    border-color: $c-bright-red;
+}
+
+.error~.error-label {
+    text-align: right;
+    display: block;
+    color: $c-bright-red;
+    font-size: 12px;
+    line-height: 1.1em;
+    margin: 10px 0 0 0;
+}

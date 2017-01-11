@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script-->
+
+<link rel="stylesheet" href="css/main.css"></head>
+
+<body id="base">
+
+    <form id="picture-upload" name="picture-upload" method="post" action="api/picture" enctype="multipart/form-data">
+        <input type="file" name="picture"/>
+        <input type="submit" value="Send pic"/>
+    </form>
+
+<aside>
+    <h2>Address search</h2>
+    <form id="section-address__show" name="section-address__show">
+        <section class="link-box">
+            <div class="link-box__frame">
+                <div class="link-box__icon"></div>
+                <header>
+                    <div class="link-box__input">
+                        <label for="id">Id:</label>
+                        <input name="id" type="text" value="" placeholder="e.g. 1000">
+                        <p class="error-label"></p>
+                    </div>
+                </header>
+                <div class="link-box__action">
+                    <button type="button" id="section-address__show-submit" class="link-box__button">Go</button>
+                </div>
+            </div>
+        </section>
+        <section class="link-box" id="section-address__show-result" style="display: none">
+            <div class="link-box__frame">
+                <div class="link-box__icon"></div>
+                <header>
+                    <ul class="link-box_address">
+                        <li data-item="id">id: <span></span></li>
+                        <li data-item="address">address: <span></span></li>
+                        <li data-item="postcode">postcode: <span></span></li>
+                    </ul>
+                </header>
+            </div>
+        </section>
+    </form>
+</aside>
+
+<main>
+    <h2>Address list</h2>
+    <button type="button" id="section-address__list-submit" class="link-box__button">Get</button>
+    <button type="button" id="section-address__list-add" class="link-box__button">Add</button>
+
+    <section class="link-box" id="section-address__list-result" style="display: none">
+        <div class="link-box__frame">
+            <table class="link-box__table">
+                <caption>Addresses</caption>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Address</th>
+                        <th>Postcode</th>
+                        <th colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody id="section-address__list-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<div class="popup" id="section-address__popup" style="display: none">
+    <h2>Address edit</h2>
+    <form id="section-address__edit" name="section-address__edit">
+        <section class="link-box">
+            <div class="link-box__frame">
+                <div class="link-box__icon"></div>
+                <header>
+                    <div class="link-box__input">
+                        <label for="id">Id:</label>
+                        <input name="id" type="text" value="" placeholder="required">
+                        <p class="error-label"></p>
+                    </div>
+                    <div class="link-box__input">
+                        <label for="address">Address:</label>
+                        <input name="address" type="text" value="">
+                        <p class="error-label"></p>
+                    </div>
+                    <div class="link-box__input">
+                        <label for="postcode">Postcode:</label>
+                        <input name="postcode" type="text" value="" placeholder="required">
+                        <p class="error-label"></p>
+                    </div>
+                </header>
+            </div>
+        </section>
+        <button type="button" id="section-address__edit-cancel" class="link-box__button">Cancel</button>
+        <button type="button" id="section-address__edit-submit" class="link-box__button">Submit</button>
+    </form>
+</div>
+
+<div class="popup" id="section-address__confirm" style="display: none">
+    <h2>Address delete</h2>
+    <p>Are you sure to delete this address ?</p>
+    <button type="button" id="section-address__delete-cancel" class="link-box__button">Cancel</button>
+    <button type="button" id="section-address__delete-submit" class="link-box__button">Delete</button>
+</div>
+
+    <!--script type="module" src="js_src/address/addressList.js"></script>
+    <script type="module" src="js_src/address/addressDelete.js"></script>
+    <script type="module" src="js_src/address/addressEdit.js"></script>
+    <script type="module" src="js_src/address/addressShow.js"></script>
+    <script type="module" src="js_src/common/ajax.js"></script>
+    <script type="module" src="js_src/common/formaters.js"></script>
+    <script type="module" src="js_src/common/formErrors.js"></script>
+    <script type="module" src="js_src/common/FormItem.js"></script>
+    <script type="module" src="js_src/common/validators.js"></script>
+    <script type="module" src="js_src/common/ViewEditForm.js"></script>
+    <script src="js_src/app.js"></script-->
+    <script src="js/bundle.js" type="text/javascript"></script>
+</body>
+
+</html>
