@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="widivh=device-widivh, initial-scale=1">
     <title>Contact Book 02</title>
-    <link rel="stylesheet" href="css/normalize-reboot.css"></head>
-    <link rel="stylesheet" href="css/font.css"></head>
-    <link rel="stylesheet" href="css/contact.css"></head>
+    <link rel="stylesheet" href="css/normalize-reboot.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
 </head>
 <body>
     <header>
@@ -17,17 +18,48 @@
     </main>
 
     <div class="contact" id="prototype">
-        <h3 class="contact__name"> <span class="contact__force"></span>
-        </h3>
+        <h3 class="contact__name"> <span class="contact__force"></span></h3>
         <div class="contact__body">
             <img class="contact__picture" src="" alt="" />
             <div class="contact__text">
-                <h4 class="contact__text-email">email: <a href="anakin@tatooine.com"></a></h4>
+                <h4 class="contact__text-email">email: <a href=""></a></h4>
                 <h4 class="contact__text-homeworld">homeworld: <span></span></h4>
                 <h4 class="contact__text-species">species: <span></span></h4>
             </div>
         </div>
     </div>
+
+    <section class="popup contact-detail" id="contact-detail">
+        <header>
+            Contact detail
+            <span class="contact-detail__button--close">&#10006;</span>
+        </header>
+        <div class="contact-detail__body">
+            <img data-prop="picture" src="" alt="" />
+            <h4 data-prop="name"></h4>
+            <div class="contact-detail__text">
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">email:</div>
+                    <div class="contact-detail__text-value">
+                        <a href="" data-prop="email"></a>
+                    </div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">homeworld:</div>
+                    <div class="contact-detail__text-value" data-prop="homeworld"></div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">species:</div>
+                    <div class="contact-detail__text-value" data-prop="species"></div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">info:</div>
+                    <div class="contact-detail__text-value" data-prop="info"></div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="contact-detail__button--edit">&#9998;</button>
+    </section>
 
     <script src="js/bundle.js"></script>
 </body>

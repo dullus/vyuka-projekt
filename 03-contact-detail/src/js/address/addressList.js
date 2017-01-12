@@ -5,7 +5,7 @@
  * @requires jquery
  */
 import {ajax} from 'common/ajax';
-import {addressShow} from 'address/addressShow';
+import {addressDetail} from 'address/addressDetail';
 import $ from 'jquery';
 
 /** @constant {String} */
@@ -47,7 +47,7 @@ class AddressList {
      */
     _bindItem(element) {
         element.on('click', (e) => {
-            addressShow.draw(e.currentTarget.dataset['id']);
+            addressDetail.draw(e.currentTarget.dataset['id']);
         });
     }
 

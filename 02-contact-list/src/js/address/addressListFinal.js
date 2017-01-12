@@ -14,7 +14,7 @@ const ADDRESS_FIELDS = {
     id: {type: 'id', selector: ''},
     name: {type: 'name', selector: '.contact__name'},
     picture: {type: 'img', selector: '.contact__picture'},
-    email: {type: 'txt', selector: '.contact__text-email a'},
+    email: {type: 'email', selector: '.contact__text-email a'},
     homeworld: {type: 'txt', selector: '.contact__text-homeworld span'},
     species: {type: 'txt', selector: '.contact__text-species span'},
     force: {type: 'force', selector: '.contact__force'}
@@ -82,6 +82,10 @@ class AddressListFinal {
                             itemElement.addClass('contact__force--dark');
                         }
                         itemElement.text(itemData[field]);
+                        break;
+                    case 'email':
+                        itemElement.text(itemData[field]);
+                        itemElement.attr('href', `mailto:${itemData[field]}`);
                         break;
                     case 'name':
                         let cache = itemElement.children();

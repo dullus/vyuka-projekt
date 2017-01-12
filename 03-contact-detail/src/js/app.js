@@ -5,7 +5,7 @@
  * @requires module:address/addressShow
  */
 import {addressList} from 'address/addressList';
-import {addressShow} from 'address/addressShow';
+import {addressDetail} from 'address/addressDetail';
 
 /**
  * My starting class
@@ -17,7 +17,7 @@ class App {
      */
     init() {
         addressList.init();
-        addressShow.init();
+        addressDetail.init();
     }
 }
 

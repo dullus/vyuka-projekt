@@ -10,7 +10,7 @@ import $ from 'jquery';
 
 const API_URL = '/api/address/';
 const IMG_URL = '/img/uploads/';
-
+const CONTACT_ITEMS = ['id', 'picture', 'name', 'email', 'homeworld', 'species', 'info'];
 /**
  * Shows address by searching ID
  * @class
@@ -38,6 +38,10 @@ class AddressDetail  {
         this.element.closeButton = $('.contact-detail__button--close');
         this.element.editButton = $('.contact-detail__button--edit');
         this.element.detail = $('#contact-detail');
+        CONTACT_ITEMS.map((item) => {
+            let elementItem = this.element.detail.find(`[data-prop="${item}"]`);
+            this.element[item] = elementItem.length ? elementItem : null;
+        });
     }
 
     /**
@@ -72,11 +76,13 @@ class AddressDetail  {
     }
 
     _updateValues(data) {
-        for (var prop in data) {
-            if (prop === 'picture') {
-                $(`${this.element.detail} [data-prop="${prop}"]`).attr('src', `${IMG_URL}${data[prop]}`);
-            } else {
-                $(`${this.element.detail} [data-prop="${prop}"]`).text(data[prop]);
+        for (let prop in data) {
+            if (this.element[prop]) {
+                if (prop === 'picture') {
+                    this.element[prop].attr('src', `${IMG_URL}${data[prop]}`);
+                } else {
+                    this.element[prop].text(data[prop]);
+                }
             }
         }
     }
