@@ -5,7 +5,7 @@
  * @requires jquery
  */
 import {ajax} from 'common/ajax';
-import {addressEdit} from 'address/addressEdit';
+import {addressDetail} from 'address/addressDetail';
 import $ from 'jquery';
 
 /** @constant {String} */
@@ -47,7 +47,7 @@ class AddressList {
      */
     _bindItem(element) {
         element.on('click', (e) => {
-            addressEdit.edit(e.currentTarget.dataset['id']);
+            addressDetail.draw(e.currentTarget.dataset['id']);
         });
     }
 
@@ -56,12 +56,11 @@ class AddressList {
      */
     getList() {
         ajax.get(API_URL)
-            .then(
-                (result) => {
-                    this.drawList(result);
-                }
-            ).catch(function(error) {
-                console.log('NotFound');
+            .then((result) => {
+                this.drawList(result);
+            })
+            .catch(function(error) {
+                console.error('😨 Coškaj plane še stalo!');
             });
     }
 

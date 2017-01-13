@@ -15,7 +15,7 @@ import {addressList} from 'address/addressList';
 import $ from 'jquery';
 
 /** @constant {String} */
-const SECTION_ID = 'section-address__edit';
+const SECTION_ID = 'contact-edit__form';
 /** @constant {String} */
 const SECTION_SELECTOR = '#' + SECTION_ID;
 
@@ -107,9 +107,9 @@ class AddressEdit extends ViewEditForm {
      */
     _initElements() {
         this.element.form = $(SECTION_SELECTOR);
-        this.element.popup = $('#section-address__popup');
-        this.element.cancelButton = $('#section-address__edit-cancel');
-        this.element.submitButton = $('#section-address__edit-submit');
+        this.element.popup = $('#contact-edit');
+        this.element.cancelButton = $('.contact-edit__button--close');
+        this.element.submitButton = $('.contact-edit__button--submit');
     }
 
     /**

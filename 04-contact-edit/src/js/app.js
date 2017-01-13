@@ -3,10 +3,9 @@
  * @module app
  * @requires module:address/addressShow
  */
-// import {addressShow} from 'address/addressShow';
 import {addressList} from 'address/addressList';
+import {addressDetail} from 'address/addressDetail';
 import {addressEdit} from 'address/addressEdit';
-// import {addressDelete} from 'address/addressDelete';
 
 /**
  * My starting class
@@ -17,10 +16,9 @@ class App {
      * Object initialisation
      */
     init() {
-        // addressShow.init();
         addressList.init();
+        addressDetail.init();
         addressEdit.init();
-        // addressDelete.init();
     }
 }
 

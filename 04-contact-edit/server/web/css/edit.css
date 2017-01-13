@@ -1,0 +1,31 @@
+.contact-edit {
+    max-height: 90vh;
+}
+
+.contact-edit__text {
+    font-size: 0.7rem;
+}
+
+.contact-edit__body {
+    margin: 15px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 520px) and (orientation: landscape) {
+    .contact-edit__body {
+        max-height: 65vh;
+    }
+}
+
+
+@media screen and (min-width: 520px) and (min-height: 520px) {
+    .contact-detail__text {
+        font-size: 1rem;
+    }
+
+    .contact-edit__body {
+        max-height: inherit;
+        overflow-y: inherit;
+    }
+}

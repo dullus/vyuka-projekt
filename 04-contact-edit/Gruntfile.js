@@ -35,5 +35,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-browserify');
 
+    grunt.registerTask('dev', ['browserify:dev']);
     grunt.registerTask('default', ['browserify:prod']);
 };
