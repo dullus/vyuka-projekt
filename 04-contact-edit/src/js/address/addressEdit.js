@@ -106,6 +106,7 @@ class AddressEdit extends ViewEditForm {
      * @private
      */
     _initElements() {
+        this.element.list = $('main');
         this.element.form = $(SECTION_SELECTOR);
         this.element.popup = $('#contact-edit');
         this.element.cancelButton = $('.contact-edit__button--close');
@@ -129,6 +130,7 @@ class AddressEdit extends ViewEditForm {
         });
 
         this.element.cancelButton.on('click', (e) => {
+            this.element.list.removeClass('contact-detail--blur');
             this.element.popup.hide();
         });
     }

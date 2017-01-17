@@ -30,10 +30,18 @@ module.exports = function(grunt) {
                     'server/web/js/bundle.js': ['src/js/**/*.js']
                 }
             }
+        },
+        watch: {
+            scripts: {
+                files: 'src/js/**/*.js',
+                tasks: ['browserify:dev'],
+                livereload: true
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('dev', ['browserify:dev']);
     grunt.registerTask('default', ['browserify:prod']);

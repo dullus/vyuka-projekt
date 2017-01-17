@@ -69,47 +69,61 @@
         </header>
         <form id="contact-edit__form" name="contact-edit__form">
             <div class="contact-edit__body">
-                <div class="contact-edit__input">
-                    <label for="id">Id:</label>
-                    <input name="id" type="text" value="" placeholder="required" />
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="id">id:</label>
+                    <div class="contact-edit__input">
+                        <input name="id" type="text" value="" placeholder="required" />
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__input">
-                    <label for="name">Name:</label>
-                    <input name="name" type="text" value="" />
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="name">name:</label>
+                    <div class="contact-edit__input">
+                        <input name="name" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__input">
-                    <label for="email">Email:</label>
-                    <input name="email" type="text" value="" placeholder="required" />
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="email">email:</label>
+                    <div class="contact-edit__input">
+                        <input name="email" type="text" value="" placeholder="required" />
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__input">
-                    <label for="homeworld">Homeworld:</label>
-                    <input name="homeworld" type="text" value="" />
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="homeworld">homeworld:</label>
+                    <div class="contact-edit__input">
+                        <input name="homeworld" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__input">
-                    <label for="species">Species:</label>
-                    <input name="species" type="text" value="" />
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="species">species:</label>
+                    <div class="contact-edit__input">
+                        <input name="species" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__input">
-                    <label for="info">Info:</label>
-                    <textarea name="info"></textarea>
-                    <p class="error-label"></p>
+                <div class="contact-edit__field">
+                    <label for="force">force:</label>
+                    <div class="contact-edit__select">
+                        <select name="force">
+                            <option value="">--</option>
+                            <option value="light">light</option>
+                            <option value="dark">dark</option>
+                        </select>
+                        <div class="error-label"></div>
+                    </div>
                 </div>
-                <div class="contact-edit__select">
-                    <label for="force">Force:</label>
-                    <select name="force">
-                        <option value="">--</option>
-                        <option value="light">light</option>
-                        <option value="dark">dark</option>
-                    </select>
-                    <p class="error-label error-label--select "></p>
+                <div class="contact-edit__field">
+                    <label for="info">info:</label>
+                    <div class="contact-edit__input">
+                        <textarea name="info" rows="4"></textarea>
+                        <div class="error-label"></div>
+                    </div>
                 </div>
             </div>
-            <button type="button" class="contact-edit__button--submit">&#128190;</button>
+            <button type="button" class="contact-edit__button--submit">&#10004;</button>
         </form>
     </section>
 

@@ -1,7 +1,7 @@
 /**
  * My starting module
  * @module app
- * @requires module:address/addressShow
+ * @requires module:address/addressList
  */
 // import {addressList} from 'address/addressList';
 import {addressListFinal} from 'address/addressListFinal';
