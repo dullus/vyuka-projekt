@@ -66,7 +66,7 @@ class AddressList {
 
     drawList(result) {
         this.element.list.empty();
-        result.map((address) => {
+        result.forEach((address) => {
             let newElement = this._drawItem(address);
             this.element.list.append(newElement);
             this._bindItem(newElement);
