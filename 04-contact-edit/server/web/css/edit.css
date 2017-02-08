@@ -11,7 +11,6 @@
 }
 
 .contact-edit__body {
-    margin: 15px;
     max-height: 60vh;
     overflow-y: auto;
 }

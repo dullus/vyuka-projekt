@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize-reboot.css"/>
     <link rel="stylesheet" href="css/font.css"/>
     <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
     <link rel="stylesheet" href="css/detail.css"/>
     <link rel="stylesheet" href="css/edit.css"/>
 </head>
@@ -33,9 +34,15 @@
     <section class="popup contact-detail" id="contact-detail">
         <header>
             Contact detail
-            <span class="contact-detail__button--close">&#10006;</span>
+            <span class="popup__close">
+                <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                	<circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+                </svg>
+            </span>
         </header>
-        <div class="contact-detail__body">
+        <div class="popup__body contact-detail__body">
             <img data-prop="picture" src="" alt="" />
             <h4 data-prop="name"></h4>
             <div class="contact-detail__text">
@@ -59,16 +66,31 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="contact-detail__button--edit">&#9998;</button>
+        <footer>
+            <button type="button" class="popup__button contact-detail__edit">
+                <img src="img/icons/icon-compose.svg" alt="edit" />
+                <span>Edit</span>
+            </button>
+            <button type="button" class="popup__button popup__button--disabled contact-detail__delete">
+                <img src="img/icons/icon-trash.svg" alt="delete" />
+                <span>Delete</span>
+            </button>
+        </footer>
     </section>
 
     <section class="popup contact-edit" id="contact-edit">
         <header>
             Contact edit
-            <span class="contact-edit__button--close">&#10006;</span>
+            <span class="popup__close">
+                <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                	<circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+                </svg>
+            </span>
         </header>
         <form id="contact-edit__form" name="contact-edit__form">
-            <div class="contact-edit__body">
+            <div class="popup__body contact-edit__body">
                 <div class="contact-edit__field">
                     <label for="id">id:</label>
                     <div class="contact-edit__input">
@@ -123,7 +145,12 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="contact-edit__button--submit">&#10004;</button>
+            <footer>
+                <button type="button" class="popup__button contact-edit__submit">
+                    <img src="img/icons/save.svg" alt="edit" />
+                    <span>Save</span>
+                </button>
+            </footer>
         </form>
     </section>
 

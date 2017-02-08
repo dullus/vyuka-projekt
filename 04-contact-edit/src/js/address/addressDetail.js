@@ -37,8 +37,8 @@ class AddressDetail  {
      */
     _initElements() {
         this.element.list = $('main');
-        this.element.closeButton = $('.contact-detail__button--close');
-        this.element.editButton = $('.contact-detail__button--edit');
+        this.element.closeButton = $('.contact-detail .popup__close');
+        this.element.editButton = $('.contact-detail__edit');
         this.element.detail = $('#contact-detail');
         CONTACT_ITEMS.map((item) => {
             let elementItem = this.element.detail.find(`[data-prop="${item}"]`);
@@ -52,7 +52,7 @@ class AddressDetail  {
      */
     _initBindings() {
         this.element.closeButton.on('click', e => {
-            this.element.list.removeClass('contact-detail--blur');
+            this.element.list.removeClass('blur');
             this.element.detail.hide();
         });
 
@@ -76,7 +76,7 @@ class AddressDetail  {
                     });
             }
             this.element.detail.show();
-            this.element.list.addClass('contact-detail--blur');
+            this.element.list.addClass('blur');
         }
     }
 
