@@ -35,8 +35,8 @@ class AddressDetail  {
      * @private
      */
     _initElements() {
-        this.element.closeButton = $('.contact-detail__button--close');
-        this.element.editButton = $('.contact-detail__button--edit');
+        this.element.closeButton = $('.contact-detail .popup__close');
+        this.element.editButton = $('.contact-detail__edit');
         this.element.detail = $('#contact-detail');
         CONTACT_ITEMS.map((item) => {
             let elementItem = this.element.detail.find(`[data-prop="${item}"]`);
