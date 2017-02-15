@@ -15,11 +15,29 @@ Cvičenie je zamerané na pochopenie:
 * Ukázať finálnu podobu zoznamu a popup okna
 
 ## 2. HTML & CSS prototyp popup okna
-* podľa `final.html` vysvetliť štruktúru
+1. ukázať `final.html` vysvetliť čo je popup
+2.	spustiť `index.html`, vysvetliť štruktúru
 ```html
 <section class="popup contact-detail" id="contact-detail">
 ```
-* vysvetliť `data` atribút
+-	vysvetliť o čom je popup a akú techniku použiť
+3.	odkomentujte `<header>`
+ -	vysvetliť svg a prvý spôsob pripojenia = svg tagy
+ -	v `popup.css` odkomentovať a vysvetliť (57) `/* stroke: #ffffff; */ `
+4.	odkomentujte `<footer>`
+ -	vysvetliť `<button>` tag a že do vnútra môže ísť mnoho iných tagov
+ -	vysvetliť druhý typ pripojenia svg = img tag
+ -	prejst v `popup.css` (122-123) `text-transform` a `float:left`
+ -	vysvetliť prečo máme dočasne `clear:both` za `<footer>` - lebo float
+5.	odkomentujte `<div class="contact-detail__text">`
+ -	vysvetliť label / value princíp
+ -	vysvetliť `display:table` (58), `table-cell` (71)
+6.	`popup.css`
+ -	odkomentujte vycentrovanie (8-10)
+ -	zmeňte position na `absolute` (6)
+ -	odkomentujte transormáciu, vysvetliť fintu -50% -50%
+ -	zmeňte position na `fixed` (6), vysvetliť rozdiel
+7.	odkomentujte tieňovanie v `popup.css` aby sa zvýraznil popup efekt (3-4)
 
 ## 3. src/js/app.js
 * Vysvetliť že pridávame ďalší modul
