@@ -5,7 +5,8 @@
  */
 import {addressList} from 'address/addressList';
 import {addressDetail} from 'address/addressDetail';
-import {addressEdit} from 'address/addressEdit';
+// import {addressEdit} from 'address/addressEdit';
+import {addressEdit} from 'address/addressEditFinal';
 
 /**
  * My starting class

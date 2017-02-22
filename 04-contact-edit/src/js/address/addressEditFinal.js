@@ -22,7 +22,7 @@ const SECTION_SELECTOR = '#' + SECTION_ID;
 
 const API_URL = '/api/address/';
 
-class AddressEdit extends ViewEditForm {
+class AddressEditFinal extends ViewEditForm {
     constructor() {
         super();
         this.element = {};
@@ -50,7 +50,6 @@ class AddressEdit extends ViewEditForm {
                     ['isMax', 255, 'Please use 255 characters max']
                 ]
             }),
-/*
             email: new FormItem({
                 groupId: SECTION_ID,
                 name: 'email',
@@ -82,8 +81,6 @@ class AddressEdit extends ViewEditForm {
                     ['isMax', 255, 'Please use 255 characters max']
                 ]
             }),
-*/
-/*
             info: new FormItem({
                 groupId: SECTION_ID,
                 name: 'info',
@@ -94,7 +91,6 @@ class AddressEdit extends ViewEditForm {
                     ['isMax', 1024, 'Please use 1024 characters max']
                 ]
             })
-*/
         };
     }
 
@@ -204,4 +200,4 @@ class AddressEdit extends ViewEditForm {
     }
 }
 
-export let addressEdit = new AddressEdit();
+export let addressEdit = new AddressEditFinal();

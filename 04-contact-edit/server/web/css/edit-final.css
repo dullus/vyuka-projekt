@@ -114,7 +114,7 @@
     font-size: 0.8rem;
     color: #fa8072;
     padding-left: 3px;
-    /* display: none; */
+    display: none;
 }
 
 .error + .error-label {

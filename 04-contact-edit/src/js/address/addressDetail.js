@@ -4,8 +4,8 @@
  * @requires module:common/ajax
  * @requires jquery
  */
-// import {FormItem} from 'common/formaters';
-import {addressEdit} from 'address/addressEdit';
+// import {addressEdit} from 'address/addressEdit';
+import {addressEdit} from 'address/addressEditFinal';
 import {ajax} from 'common/ajax';
 import $ from 'jquery';
 
@@ -90,6 +90,10 @@ class AddressDetail  {
                 }
             }
         }
+    }
+
+    resetLastId() {
+        this._lastId = null;
     }
 
 }

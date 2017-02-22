@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/contact.css"/>
     <link rel="stylesheet" href="css/popup.css"/>
     <link rel="stylesheet" href="css/detail.css"/>
-    <link rel="stylesheet" href="css/edit.css"/>
+    <link rel="stylesheet" href="css/edit-final.css"/>
 </head>
 <body>
     <header>
@@ -105,7 +105,6 @@
                         <div class="error-label"></div>
                     </div>
                 </div>
-<!--
                 <div class="contact-edit__field">
                     <label for="email">email:</label>
                     <div class="contact-edit__input">
@@ -127,8 +126,6 @@
                         <div class="error-label"></div>
                     </div>
                 </div>
--->
-<!--
                 <div class="contact-edit__field">
                     <label for="force">force:</label>
                     <div class="contact-edit__select">
@@ -147,17 +144,21 @@
                         <div class="error-label"></div>
                     </div>
                 </div>
--->
             </div>
             <footer>
-<!--
                 <button type="button" class="popup__button contact-edit__submit">
                     <img src="img/icons/save.svg" alt="edit" />
                     <span>Save</span>
                 </button>
--->
             </footer>
         </form>
+    </section>
+
+    <section class="popup" id="section-address__confirm" style="display: none">
+        <h2>Address delete</h2>
+        <p>Are you sure to delete this address ?</p>
+        <button type="button" id="section-address__delete-cancel" class="contact-edit__button">Cancel</button>
+        <button type="button" id="section-address__delete-submit" class="contact-edit__button">Delete</button>
     </section>
 
     <script src="js/bundle.js"></script>

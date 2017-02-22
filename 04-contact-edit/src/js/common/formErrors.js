@@ -142,7 +142,7 @@ class FormErrors {
      * @private
      */
     _scrollTo(element) {
-        $('body').animate({scrollTop: element.offset().top - ELEMENT_DELTA}, 200);
+        // $('body').animate({scrollTop: element.offset().top - ELEMENT_DELTA}, 200);
     }
 }
 

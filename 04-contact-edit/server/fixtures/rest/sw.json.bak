@@ -47,7 +47,7 @@
             "email": "chewie@kashyyyk.com",
             "homeworld": "Kashyyk",
             "species": "wookiee",
-            "force": "",
+            "force": null,
             "info": "Chewbacca, known affectionately to his friends as Chewie, was a male Wookiee warrior, smuggler, and resistance fighter who fought in the Clone Wars, the Galactic Civil War, and the conflict between the First Order and the Resistance."
         },
         {
