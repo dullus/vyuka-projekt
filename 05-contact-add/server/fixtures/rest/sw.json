@@ -1,0 +1,174 @@
+{
+    "address": [
+        {
+            "id": "101",
+            "name": "Anakin Skywalker",
+            "picture": "anakin-skywalker.jpg",
+            "email": "anakin@tatooine.com",
+            "homeworld": "Tattoine",
+            "species": "human",
+            "force": "light",
+            "info": "At a young age, Skywalker was discovered by Qui-Gon Jinn and Obi Wan Kenobi, who freed Anakin from slavery and brought the boy into their community; hailing Skywalker as the Chosen One of Jedi prophecy, destined to defeat the Sith and bring balance to the Force."
+        },
+        {
+            "id": "102",
+            "name": "BB-8",
+            "picture": "bb-8.jpg",
+            "email": "bb8@jakku.com",
+            "homeworld": "Jakku",
+            "species": "droid",
+            "force": null,
+            "info": "BB-8 was mostly white, with some silver and orange on its body, as well as a black photoreceptor. The droid belonged to Resistance pilot Poe Dameron, whom he accompanied during his flights on his T-70 X-wing fighter."
+        },
+        {
+            "id": "103",
+            "name": "Boba Fett",
+            "picture": "boba-fett.jpg",
+            "email": "boba@kamino.com",
+            "homeworld": "Kamino",
+            "species": "human",
+            "force": "",
+            "info": "Bounty hunter and the genetic clone of infamous bounty hunter Jango Fett. Boba was created by the cloners on Kamino and was physically identical to the clone troopers created for the Grand Army of the Republic, though Boba was unaltered and did not grow at the same accelerated rate as the other clones."
+        },
+        {
+            "id": "104",
+            "name": "C-3PO",
+            "picture": "c-3po.jpg",
+            "email": "c3po@tatooine.com",
+            "homeworld": "Tatooine",
+            "species": "droid",
+            "force": null,
+            "info": "Built from spare parts by Anakin Skywalker, a human slave who lived in Mos Espa, a city on the Outer Rim world of Tatooine. C-3PO and R2-D2 were assigned to the Alderaan cruiser Tantive IV, where they served senator Bail Organa for nineteen years."
+        },
+        {
+            "id": "105",
+            "name": "Chewbacca",
+            "picture": "chewbacca.jpg",
+            "email": "chewie@kashyyyk.com",
+            "homeworld": "Kashyyk",
+            "species": "wookiee",
+            "force": "",
+            "info": "Chewbacca, known affectionately to his friends as Chewie, was a male Wookiee warrior, smuggler, and resistance fighter who fought in the Clone Wars, the Galactic Civil War, and the conflict between the First Order and the Resistance."
+        },
+        {
+            "id": "106",
+            "name": "Darth Sidious",
+            "picture": "darth-sidious.jpg",
+            "email": "palpatine@naboo.com",
+            "homeworld": "Naboo",
+            "species": "human",
+            "force": "dark",
+            "info": "Darth Sidious, born as Sheev Palpatine was a human male Dark Lord of the Sith who served as the last Supreme Chancellor of the Galactic Republic and as the Emperor of the Galactic Empire, and was the last reigning Dark Lord of the Sith."
+        },
+        {
+            "id": "107",
+            "name": "Darth Maul",
+            "picture": "darth-maul.jpg",
+            "email": "maul@dathomir.com",
+            "homeworld": "Dathomir",
+            "species": "zabrak",
+            "force": "dark",
+            "info": "Taken as the Sith apprentice of Darth Sidious, the Dark Lord of the Sith, and given the name Darth Maul. After revealing the existence of the Sith to the Jedi Order, Maul fell in a lightsaber duel against Obi-Wan Kenobi during the Battle of Naboo."
+        },
+        {
+            "id": "108",
+            "name": "Darth Vader",
+            "picture": "darth-vader.jpg",
+            "email": "dv@deathstar.com",
+            "homeworld": "Death Star",
+            "species": "human",
+            "force": "dark",
+            "info": "Anakin Skywalker betrayed the Jedi, pledging himself to the teachings of his former confidant and friend, Supreme Chancellor Palpatine (secretly the Dark Lord of the Sith, Darth Sidious), thus becoming the Sith Lord Darth Vader."
+        },
+        {
+            "id": "109",
+            "name": "Han Solo",
+            "picture": "han-solo.jpg",
+            "email": "han@corellia.com",
+            "homeworld": "Corellia",
+            "species": "human",
+            "force": "",
+            "info": "Human male smuggler who became a leader in the Alliance to Restore the Republic and an instrumental figure in the defeat of the Galactic Empire during the Galactic Civil War."
+        },
+        {
+            "id": "110",
+            "name": "Jabba the Hutt",
+            "picture": "jabba-the-hutt.jpg",
+            "email": "jabba@tatooine.com",
+            "homeworld": "Tattoine",
+            "species": "hutt",
+            "force": null,
+            "info": "Gangster and crime lord, as well as a member of the Grand Hutt Council, who operated from his palace on the Outer Rim world of Tatooine. Jabba was a major figure on Tatooine, where he controlled the bulk of the trafficking in illegal goods, piracy and slavery that generated most of the planet's wealth."
+        },
+        {
+            "id": "111",
+            "name": "Kylo Ren",
+            "picture": "kylo-ren.jpg",
+            "email": "ben@firstorder.com",
+            "homeworld": "Firstorder",
+            "species": "human",
+            "force": null,
+            "info": "Given the name Ben Solo, he was born to Princess Leia Organa and General Han Solo.  Force warrior and a former Jedi trainee under his uncle, Jedi Master Luke Skywalker, before Ren destroyed Skywalker's attempt to restore the Jedi Order and became an apprentice of Supreme Leader Snoke of the First Order."
+        },
+        {
+            "id": "112",
+            "name": "Leia Organa",
+            "picture": "leia-organa.jpg",
+            "email": "leia@alderaan.com",
+            "homeworld": "Alderaan",
+            "species": "human",
+            "force": "light",
+            "info": "Born as Leia Amidala Skywalker was a Force-sensitive human female who served as princess of Alderaan, a member of the Imperial Senate, a leader in the Alliance to Restore the Republic and New Republic, and the founding general of the Resistance."
+        },
+        {
+            "id": "113",
+            "name": "Luke Skywalker",
+            "picture": "luke-skywalker.jpg",
+            "email": "luke@tatooine.com",
+            "homeworld": "Tatooine",
+            "species": "human",
+            "force": "light",
+            "info": "Force-sensitive human male Jedi Master who was instrumental in defeating the Galactic Empire and the Sith during the Galactic Civil War. He was the son of the redeemed Jedi Knight Anakin Skywalker and Senator Padmé Amidala."
+        },
+        {
+            "id": "114",
+            "name": "Obi-Wan Kenobi",
+            "picture": "obi-wan-kenobi.jpg",
+            "email": "ben@stewjon.com",
+            "homeworld": "Stewjon",
+            "species": "human",
+            "force": "light",
+            "info": "Force-sensitive human male Jedi Master who served the Galactic Republic. He was mentor to both Anakin Skywalker and his son, Luke, training them in the ways of the Force."
+        },
+        {
+            "id": "115",
+            "name": "Padmé Amidala",
+            "picture": "padme-amidala.jpg",
+            "email": "padme@naboo.com",
+            "homeworld": "Naboo",
+            "species": "human",
+            "force": null,
+            "info": "Amidala was elected Queen of Naboo at the age of fourteen, soon after which she was forced to contend with the Trade Federation occupation. Amidala fought in Battle of Geonosis that sparked the war, soon after which she secretly married Jedi Knight Anakin Skywalker."
+        },
+        {
+            "id": "116",
+            "name": "R2-D2",
+            "picture": "r2-d2.jpg",
+            "email": "r2d2@naboo.com",
+            "homeworld": "Naboo",
+            "species": "human",
+            "force": null,
+            "info": "Played a pivotal role in helping the Alliance to Restore the Republic destroy the Empire's dreaded Death Star, carrying technical readouts essential to its destruction. Serving Jedi Purge survivor Luke Skywalker throughout the Galactic Civil War, he would participate in both the Battles of Hoth and Endor, and would witness the destruction of the Empire's dreaded Death Star II a mere four years after the first space station's destruction."
+        },
+        {
+            "id": "117",
+            "name": "Rey",
+            "picture": "rey.jpg",
+            "email": "rey@jakku.com",
+            "homeworld": "Jakku",
+            "species": "human",
+            "force": "light",
+            "info": "Rey was a human female scavenger who discovered her latent Force-sensitivity while on a quest to find the legendary Jedi Master Luke Skywalker and bring a new hope to a galaxy on the brink of another war."
+        }
+    ]
+}
