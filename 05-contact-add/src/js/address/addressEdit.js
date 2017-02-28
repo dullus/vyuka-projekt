@@ -27,7 +27,7 @@ class AddressEdit extends ViewEditForm {
         super();
         this.element = {};
         this.updateMode = null;
-        this.empty = {id: '', name: '', email: '', homeworld: '', species: ''};
+        this.empty = {id: '', name: '', email: '', homeworld: '', species: '', info: ''};
 
         this.items = {
             id: new FormItem({

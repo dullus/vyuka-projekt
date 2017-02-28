@@ -6,6 +6,7 @@
  */
 import {ajax} from 'common/ajax';
 import {addressDetail} from 'address/addressDetail';
+import {addressEdit} from 'address/addressEdit';
 import $ from 'jquery';
 
 /** @constant {String} */
@@ -37,7 +38,20 @@ class AddressList {
     init() {
         this.element.list = $('main');
         this.element.prototype = $('#prototype');
+        this.element.addButton = $('.contact-list__add');
+        this._initBindings();
         this.getList();
+    }
+
+    /**
+     * Event bindings
+     * @private
+     */
+    _initBindings() {
+        this.element.addButton.on('click', e => {
+            this.element.list.addClass('blur');
+            addressEdit.edit();
+        });
     }
 
     /**

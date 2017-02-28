@@ -17,6 +17,11 @@
         <h1>Star Wars Contact Book</h1>
     </header>
 
+    <button type="button" class="popup__button contact-list__add">
+        <img src="img/icons/plus.svg" alt="add" />
+        <span>Add</span>
+    </button>
+
     <main>
     </main>
 
@@ -90,7 +95,7 @@
                 </svg>
             </span>
         </header>
-        <form id="contact-edit__form" name="contact-edit__form">
+        <form id="contact-edit__form" name="contact-edit__form" enctype="multipart/form-data">
             <div class="popup__body contact-edit__body">
                 <div class="contact-edit__field">
                     <label for="id">id:</label>
@@ -145,6 +150,7 @@
                         <div class="error-label"></div>
                     </div>
                 </div>
+                 <input type="file" name="picture" accept="image/*">
             </div>
             <footer>
                 <button type="button" class="popup__button contact-edit__submit">
