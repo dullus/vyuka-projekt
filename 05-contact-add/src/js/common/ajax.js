@@ -44,6 +44,27 @@ class Ajax {
     delete(url, data) {
         return this._ajax('DELETE', url, data);
     }
+
+    upload(url, fileData) {
+        let formData = new FormData();
+        formData.append('picture', fileData, fileData.name);
+        return new Promise((resolve, reject) => {
+            var opts = {
+                type: 'POST',
+                data: formData,
+                async: true,
+                cache: false,
+                contentType: false,
+                enctype: 'multipart/form-data',
+                processData: false,
+                success: resolve,
+                error: function(jqXHR) {
+                    reject(jqXHR.responseJSON);
+                }
+            };
+            return $.ajax(url, opts);
+        });
+    }
 };
 
 export let ajax = new Ajax();

@@ -150,7 +150,13 @@
                         <div class="error-label"></div>
                     </div>
                 </div>
-                 <input type="file" name="picture" accept="image/*">
+                <div class="contact-edit__field">
+                    <label for="picture">picture:</label>
+                    <div class="contact-edit__file">
+                        <input type="hidden" name="picture" value="" />
+                        <input type="file" name="new-picture" accept="image/*" />
+                    </div>
+                </div>
             </div>
             <footer>
                 <button type="button" class="popup__button contact-edit__submit">

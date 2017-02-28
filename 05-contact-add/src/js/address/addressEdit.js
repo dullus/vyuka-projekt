@@ -21,13 +21,15 @@ const SECTION_ID = 'contact-edit__form';
 const SECTION_SELECTOR = '#' + SECTION_ID;
 
 const API_URL = '/api/address/';
+const API_PICTURE_URL = '/api/picture/';
+const PLACEHOLDER_PICTURE = 'placeholder.jpg';
 
 class AddressEdit extends ViewEditForm {
     constructor() {
         super();
         this.element = {};
         this.updateMode = null;
-        this.empty = {id: '', name: '', email: '', homeworld: '', species: '', info: ''};
+        this.empty = {id: '', name: '', email: '', homeworld: '', species: '', info: '', picture: PLACEHOLDER_PICTURE};
 
         this.items = {
             id: new FormItem({
@@ -90,6 +92,11 @@ class AddressEdit extends ViewEditForm {
                     ['isMin', 2, 'Please provide a valid info'],
                     ['isMax', 1024, 'Please use 1024 characters max']
                 ]
+            }),
+            picture: new FormItem({
+                groupId: SECTION_ID,
+                name: 'picture',
+                required: false
             })
         };
     }
@@ -112,6 +119,7 @@ class AddressEdit extends ViewEditForm {
         this.element.popup = $('#contact-edit');
         this.element.cancelButton = $('.contact-edit .popup__close');
         this.element.submitButton = $('.contact-edit__submit');
+        this.element.fileUpload = this.element.form.find('input[type="file"]')[0];
     }
 
     /**
@@ -156,29 +164,39 @@ class AddressEdit extends ViewEditForm {
 
     _submit() {
         let data = this.element.form.serializeArray();
+        let pictureFile = this.element.fileUpload.files[0];
+        if (pictureFile) {
+            data.find(item => {
+                return item.name === 'picture';
+            }).value = pictureFile.name;
+        }
+
         console.log('submitted = ' + JSON.stringify(data));
 
         switch (this.mode) {
             case 'post':
                 ajax.post(API_URL, data)
-                    .then(
-                        (result) => this._submitSuccess()
-                    ).catch(function(error) {
-                        console.log('NotWritten');
-                    });
+                    .then(result => this._submitSuccess(pictureFile))
+                    .catch(error => console.log('NotWritten'));
                 break;
             case 'patch':
                 ajax.patch(API_URL + this._getValByKey(data, 'id'), data)
-                    .then(
-                        (result) => this._submitSuccess()
-                    ).catch(function(error) {
-                        console.log('NotWritten');
-                    });
+                    .then(result => this._submitSuccess(pictureFile))
+                    .catch(error => console.log('NotWritten'));
                 break;
         }
     }
 
-    _submitSuccess() {
+    _submitPicture(pictureFile) {
+        ajax.upload(API_PICTURE_URL, pictureFile)
+            .then(result => console.log('File saved'))
+            .catch(error => console.log('File not saved'));
+    }
+
+    _submitSuccess(pictureFile) {
+        if (pictureFile) {
+            this._submitPicture(pictureFile);
+        }
         addressList.getList();
         addressDetail.resetLastId();
         this.element.popup.hide();

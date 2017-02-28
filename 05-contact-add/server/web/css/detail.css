@@ -9,8 +9,9 @@
 }
 
 .contact-detail__body img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 5px;
+    max-height: 30vh;
 }
 
 .contact-detail__body h4 {

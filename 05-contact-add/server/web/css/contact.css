@@ -27,6 +27,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
+    clear: both;
 }
 
 @media screen and (min-width: 732px) {
