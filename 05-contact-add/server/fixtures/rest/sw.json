@@ -47,7 +47,7 @@
             "email": "chewie@kashyyyk.com",
             "homeworld": "Kashyyk",
             "species": "wookiee",
-            "force": "",
+            "force": null,
             "info": "Chewbacca, known affectionately to his friends as Chewie, was a male Wookiee warrior, smuggler, and resistance fighter who fought in the Clone Wars, the Galactic Civil War, and the conflict between the First Order and the Resistance."
         },
         {
@@ -169,6 +169,16 @@
             "species": "human",
             "force": "light",
             "info": "Rey was a human female scavenger who discovered her latent Force-sensitivity while on a quest to find the legendary Jedi Master Luke Skywalker and bring a new hope to a galaxy on the brink of another war."
+        },
+        {
+            "id": "118",
+            "name": "Yoda",
+            "picture": "yoda.jpg",
+            "email": "yo@dagobah.com",
+            "homeworld": "Dagobah",
+            "species": "yoda",
+            "force": "light",
+            "info": "Jedi Master who served as the Grand Master of the Jedi Order in the waning days of the Galactic Republic. He was renowned within the Order for his wisdom, powers of the Force, and lightsaber combat, and he lived for nearly 900 years."
         }
     ]
 }

@@ -160,6 +160,7 @@ class AddressEdit extends ViewEditForm {
         for (var prop in data) {
             $(SECTION_SELECTOR + ' [name="' + prop + '"]').val(data[prop]);
         }
+        this.element.fileUpload.value = '';
     }
 
     _submit() {
