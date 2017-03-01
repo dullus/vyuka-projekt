@@ -51,7 +51,7 @@ a mozne alternativy
  * (32) vysvetlit **placeholder.jpg**
  * (97-99) **FormItem** pre picture
  * (167-173) zistovanie ci pridavame obrazok
- * (180,185) posielanie file objektu pre dalsi promise
+ * (180,186) promise chaining
  * (191-200) dalsi ajax call pre poslanie obrazku
 
 4. Vysvetlit rozdiel medzi klasickym form submitom a JS driven submitom

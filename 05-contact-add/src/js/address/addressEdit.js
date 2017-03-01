@@ -177,27 +177,28 @@ class AddressEdit extends ViewEditForm {
         switch (this.mode) {
             case 'post':
                 ajax.post(API_URL, data)
-                    .then(result => this._submitSuccess(pictureFile))
+                    .then(result => this._submitPicture(pictureFile))
+                    .then(result => this._submitSuccess())
                     .catch(error => console.log('NotWritten'));
                 break;
             case 'patch':
                 ajax.patch(API_URL + this._getValByKey(data, 'id'), data)
-                    .then(result => this._submitSuccess(pictureFile))
+                    .then(result => this._submitPicture(pictureFile))
+                    .then(result => this._submitSuccess())
                     .catch(error => console.log('NotWritten'));
                 break;
         }
     }
 
     _submitPicture(pictureFile) {
-        ajax.upload(API_PICTURE_URL, pictureFile)
-            .then(result => console.log('File saved'))
-            .catch(error => console.log('File not saved'));
+        if (pictureFile) {
+            ajax.upload(API_PICTURE_URL, pictureFile)
+                .then(result => console.log('File saved'))
+                .catch(error => console.log('File not saved'));
+        }
     }
 
-    _submitSuccess(pictureFile) {
-        if (pictureFile) {
-            this._submitPicture(pictureFile);
-        }
+    _submitSuccess() {
         addressList.getList();
         addressDetail.resetLastId();
         this.element.popup.hide();
