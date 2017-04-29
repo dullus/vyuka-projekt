@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Book 05</title>
+    <link rel="stylesheet" href="css/normalize-reboot.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <link rel="stylesheet" href="css/edit.css"/>
+    <link rel="stylesheet" href="css/delete.css"/>
+</head>
+<body>
+    <header>
+        <h1>Star Wars Contact Book</h1>
+    </header>
+<!--
+    <button type="button" class="popup__button contact-list__add">
+        <img src="img/icons/plus.svg" alt="add" />
+        <span>Add</span>
+    </button>
+-->
+    <main>
+    </main>
+
+    <div class="contact" id="prototype">
+        <h3 class="contact__name"> <span class="contact__force"></span></h3>
+        <div class="contact__body">
+            <img class="contact__picture" src="" alt="" />
+            <div class="contact__text">
+                <h4 class="contact__text-email">email: <a href=""></a></h4>
+                <h4 class="contact__text-homeworld">homeworld: <span></span></h4>
+                <h4 class="contact__text-species">species: <span></span></h4>
+            </div>
+        </div>
+    </div>
+
+    <section class="popup contact-detail" id="contact-detail">
+        <header>
+            Contact detail
+            <span class="popup__close">
+                <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                	<circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+                </svg>
+            </span>
+        </header>
+        <div class="popup__body contact-detail__body">
+            <img data-prop="picture" src="" alt="" />
+            <h4 data-prop="name"></h4>
+            <div class="contact-detail__text">
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">email:</div>
+                    <div class="contact-detail__text-value">
+                        <a href="" data-prop="email"></a>
+                    </div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">homeworld:</div>
+                    <div class="contact-detail__text-value" data-prop="homeworld"></div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">species:</div>
+                    <div class="contact-detail__text-value" data-prop="species"></div>
+                </div>
+                <div class="contact-detail__text-row">
+                    <div class="contact-detail__text--label">info:</div>
+                    <div class="contact-detail__text-value" data-prop="info"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <button type="button" class="popup__button contact-detail__edit">
+                <img src="img/icons/icon-compose.svg" alt="edit" />
+                <span>Edit</span>
+            </button>
+            <button type="button" class="popup__button contact-detail__delete">
+                <img src="img/icons/icon-trash.svg" alt="delete" />
+                <span>Delete</span>
+            </button>
+        </footer>
+    </section>
+
+    <section class="popup contact-edit" id="contact-edit">
+        <header>
+            Contact edit
+            <span class="popup__close">
+                <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                	<circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+                </svg>
+            </span>
+        </header>
+        <form id="contact-edit__form" name="contact-edit__form" enctype="multipart/form-data">
+            <div class="popup__body contact-edit__body">
+                <div class="contact-edit__field">
+                    <label for="id">id:</label>
+                    <div class="contact-edit__input">
+                        <input name="id" type="text" value="" placeholder="required" />
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="name">name:</label>
+                    <div class="contact-edit__input">
+                        <input name="name" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="email">email:</label>
+                    <div class="contact-edit__input">
+                        <input name="email" type="text" value="" placeholder="required" />
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="homeworld">homeworld:</label>
+                    <div class="contact-edit__input">
+                        <input name="homeworld" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="species">species:</label>
+                    <div class="contact-edit__input">
+                        <input name="species" type="text" value="" />
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="force">force:</label>
+                    <div class="contact-edit__select">
+                        <select name="force">
+                            <option value="">--</option>
+                            <option value="light">light</option>
+                            <option value="dark">dark</option>
+                        </select>
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="info">info:</label>
+                    <div class="contact-edit__input">
+                        <textarea name="info" rows="4"></textarea>
+                        <div class="error-label"></div>
+                    </div>
+                </div>
+                <div class="contact-edit__field">
+                    <label for="picture">picture:</label>
+                    <div class="contact-edit__file">
+                        <input type="hidden" name="picture" value="" />
+                        <input type="file" name="new-picture" accept="image/*" />
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <button type="button" class="popup__button contact-edit__submit">
+                    <img src="img/icons/save.svg" alt="edit" />
+                    <span>Save</span>
+                </button>
+            </footer>
+        </form>
+    </section>
+
+    <section class="popup contact-delete" id="contact-delete">
+        <header>
+            Contact delete
+            <span class="popup__close">
+                <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                	<circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+                	<polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+                </svg>
+            </span>
+        </header>
+        <div class="popup__body contact-delete__body">
+            <p>Are you sure to delete this contact ?</p>
+        </div>
+        <footer>
+            <button type="button" class="popup__button contact-delete__yes">
+                <img src="img/icons/success.svg" alt="yes" />
+                <span>Yes</span>
+            </button>
+            <button type="button" class="popup__button contact-delete__no">
+                <img src="img/icons/error.svg" alt="no" />
+                <span>No</span>
+            </button>
+        </footer>
+    </section>
+
+    <script src="js/bundle.js"></script>
+</body>
+</html>
