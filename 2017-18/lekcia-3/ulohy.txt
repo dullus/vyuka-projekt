@@ -1,0 +1,85 @@
+Uloha 3A: Flexbox
+=================
+- vysvetlit paletu
+- vysvetlit reset, u nas len border-box a body
+
+1. Zopakovat flex, vysvetlit fintu <ul> ako menu, zarovnat menu dolava:
+  nav {
+    ...
+    flex-direction: row
+    justify-content: flex-end
+  }
+
+2. odstranit underline pre vsetky <a>
+  a { text-decoration: none; }
+
+3. podciarkunt nadpis v sekciach:
+  .flex-item h3 {
+    margin-bottom: 4px;
+    border-bottom: 1px solid #bbcec8;
+  }
+
+4. <footer> tmave pozadie, biele pismo, zarovnat na stred
+  footer {
+    padding: 5px;
+    background-color: #777777;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+Uloha 3B: Mobile first
+======================
+
+1. prepnut na iPhone v devtools, vysvetlit preco je to malicke
+2. zapnut initial scale
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+3. vysvetlit preco <img> preteka, fixnut, vysvetlit height auto
+  #home img {
+    width: 100%;
+    height: auto;
+  }
+
+Uloha 3C: Media query pre desktop
+=================================
+
+1. vysvetlit media query
+2. vytvorit MQ pre 640+
+  @media screen and (min-width: 640px) {
+3. prepnut article na row, zobrazit vedla seba
+  article {
+    flex-direction: row;
+  }
+4. rovnaka sirka sections
+  .flex-item {
+    margin: 10px;
+    width: 33%;
+  }
+5. vysvetlit align-items
+  article {
+    ...
+    align-items: stretch;
+  }
+
+Uloha 3D: bonus, efekty
+1. rounded rectangle menu
+.menu li {
+  ...
+  border-radius: 5px;
+}
+2. shadow sections
+https://www.cssmatic.com/box-shadow
+  box-shadow:
+  0px /* horizontal */
+  4px /* vertical */
+  8px /* blur */
+  0px /* spread */
+  rgba(119,119,119,1); /* color */
+
+3. first-child, last-child rozne shadows, ukazat interaktivny shadow v devtools
+4. gradient
+https://www.cssmatic.com/gradient-generator
+5. Webfont
+https://fonts.google.com/
+  <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+  font-family: 'Modak', cursive;
