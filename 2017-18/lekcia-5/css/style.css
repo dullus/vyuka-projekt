@@ -12,7 +12,9 @@
   --color-gray--light: #f7f7f7;
   --color-blue--light: #dfe3ee;
   --color-blue--medium: #8b9dc3;
+  --color-blue--medium-op: rgba(139,157,195,0.8);
   --color-blue: #3b5998;
+  --color-blue--opacity: rgba(59,89,152,0.7);
   --color-gray: #777;
   --color-black: #1c1c1c;
 }
@@ -103,19 +105,65 @@ footer span.item a {
   transform: rotate(-20deg);
 }
 .panel-box {
-    background-image: url(../img/tiny_grid.png);
-    background-color: var(--color-gray--light);
-    border: 1px solid var(--color-blue--medium);
-    border-radius: 3px;
-    padding: 1rem;
-    margin: 0rem 0rem 1.625rem;
-    position: relative;
+  background-image: url(../img/tiny_grid.png);
+  background-color: var(--color-gray--light);
+  border: 1px solid var(--color-blue--medium);
+  border-radius: 3px;
+  color: var(--color-white);
+  padding: 0;
+  margin: 0rem 0rem 1.625rem;
+  position: relative;
 }
+.panel-box article {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  height: 100%;
+  min-height: 300px;
+}
+
 .panel-box.panel-box--hero {
   background-image: url(../img/inflicted.png);
   background-color: var(--color-gray);
   color: var(--color-white);
+  padding: 1rem;
 }
+.panel-box.panel-box--hero article {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  height: 100%;
+  min-height: 300px;
+}
+@media screen and (min-width: 1024px) {
+  .panel-box.panel-box--hero article {
+    background-position-x: initial;
+    flex-direction: row;
+    flex-flow: row-reverse;
+  }
+}
+
+.panel-title {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--color-blue--opacity);
+}
+.panel-title h2,
+.panel-title p {
+  margin: 0 0 0.2em 0;
+}
+@media screen and (min-width: 1024px) {
+  .panel-box--hero .panel-title {
+    width: 33%;
+  }
+}
+
 .panel-box.panel-box--add {
   background-image: none;
   background-color: var(--color-blue--medium);
@@ -123,6 +171,8 @@ footer span.item a {
   padding: 1rem;
   position: relative;
 }
+
+
 @media screen and (min-width: 640px) {
   .home-layout {
     display: grid;
