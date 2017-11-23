@@ -1,0 +1,126 @@
+/* http://www.color-hex.com/color-palette/185 */
+/*
+#3b5998	(59,89,152)
+#8b9dc3	(139,157,195)
+#dfe3ee	(223,227,238)
+#f7f7f7	(247,247,247)
+#ffffff (255,255,255)
+*/
+
+:root {
+  --color-white: #ffffff;
+  --color-gray--light: #f7f7f7;
+  --color-blue--light: #dfe3ee;
+  --color-blue--medium: #8b9dc3;
+  --color-blue--medium-op: rgba(139,157,195,0.8);
+  --color-blue: #3b5998;
+  --color-blue--opacity: rgba(59,89,152,0.7);
+  --color-gray: #777;
+  --color-black: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 5px;
+  background-color: var(--color-blue--medium);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: var(--color-blue--medium);
+}
+
+.menu li {
+  background-color: var(--color-blue);
+  margin-right: 10px;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.menu li a {
+  color: var(--color-gray--light);
+}
+
+header h1 {
+  color: var(--color-gray--light);
+  background-color: var(--color-blue--light);
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+  text-shadow:
+    0px 1px 7px rgba(0,0,0,0.4),
+    8px 0px 10px rgba(0,0,0,0.1),
+    -8px 0px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+footer {
+  padding: 5px;
+  background-color: var(--color-blue);
+  color: var(--color-gray--light);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer span.divider {
+  padding: 4px;
+}
+
+footer span.item {
+  padding: 4px;
+  color: var(--color-blue--light);
+}
+
+footer span.item a {
+  color: var(--color-blue--light);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+article {
+  min-height: 200px;
+  max-height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.panel-box {
+  background-color: var(--color-gray--light);
+  border: 1px solid var(--color-blue--medium);
+  border-radius: 3px;
+  color: var(--color-white);
+  padding: 0;
+  margin: 0rem 0rem 1.625rem;
+  position: relative;
+  width: 100%;
+}
