@@ -11,17 +11,18 @@
 }
 
 .popup {
+    display: none;
     border-radius: 5px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: fixed;
     width: 90%;
     margin: 0 auto;
-    background: var(--color-blue--light);
-    color: var(--color-blue);
-    position: fixed;
-    z-index: 10;
     top: 50%;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%, -50%);
+    background: var(--color-blue--light);
+    color: var(--color-blue);
 }
 
 @media screen and (min-width: 520px) {
@@ -49,10 +50,19 @@
     cursor: default;
 }
 
-.popup .popup__close img {
+.popup .popup__close svg {
     height: 18px;
     width: 18px;
     vertical-align: middle;
+}
+
+.icon-error .icon-error__cross {
+    stroke: #fa8072;
+}
+
+.touch .icon-error__cross,
+.icon-error:hover .icon-error__cross {
+    stroke: var(--color-white);
 }
 
 .popup__body {

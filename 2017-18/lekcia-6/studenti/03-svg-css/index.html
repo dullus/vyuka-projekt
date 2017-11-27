@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/images.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/popup.css" type="text/css">
+  <script src="js/jquery-3.2.1.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -29,7 +30,12 @@
     <header>
       Share article
       <span class="popup__close">
-        <img src="img/icons/icon-close.svg" alt="close" />
+        <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+          <circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+          <polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+          <polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+        </svg>
       </span>
     </header>
     <div class="popup__body" style="background-image: url(img/football/cristiano-ronaldo-@640.jpg);">
@@ -160,6 +166,7 @@
     <span class="item"><a id="privacy_policy" href="view/privacy-policy.html" target="_self">Privacy Policy</a></span>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
