@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Blur</title>
+  <title>Tooltip</title>
   <link rel="icon" href="img/learn-icon.png" type="png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font.css" type="text/css">
   <link rel="stylesheet" href="css/images.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/popup.css" type="text/css">
+  <link rel="stylesheet" href="css/anim.css" type="text/css">
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -23,13 +27,13 @@
   </nav>
 
   <header id="home">
-    <h1>Blur</h1>
+    <h1>Tooltip</h1>
   </header>
 
   <section class="popup" id="share-article">
     <header>
       Share article
-      <span class="popup__close">
+      <span class="popup__close" data-toggle="tooltip" data-placement="top" title="Click to close">
         <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
           <circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
@@ -64,12 +68,47 @@
     <section class="wrapper home-layout">
 
       <div class="panel__box panel__box--hero">
-        <article class="player01">
-          <div class="panel__title">
-            <h2>Sergio Aguero</h2>
-            <p>Sed dignissim lacus ante, at cursus dui suscipit convallis.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="player01">
+                <div class="panel__title">
+                  <h2>Sergio Aguero</h2>
+                  <p>Sed dignissim lacus ante, at cursus dui suscipit convallis.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="player10">
+                <div class="panel__title">
+                  <h2>Paul Pogba</h2>
+                  <p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="player11">
+                <div class="panel__title">
+                  <h2>David De Gea</h2>
+                  <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </div>
+              </article>
+            </div>
           </div>
-        </article>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
 
       <div class="panel__box">
