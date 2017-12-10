@@ -1,0 +1,12 @@
+body {
+  perspective-origin: 50% 50%;
+}
+
+.popup {
+  transform: translate(-50%, -50%) perspective(500px) rotatex(0deg);
+  transition: all .4s ease;
+}
+
+.popup--fall {
+  transform: translate(-50%, -50%) perspective(500px) rotatex(90deg);
+}
