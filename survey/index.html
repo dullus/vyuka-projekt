@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vyhodnotenie testu ku kurzu</title>
+    <link rel="stylesheet" href="survey.css"/>
+    <script src="questions.js"></script>
+  </head>
+  <body>
+    <form>
+    <div id="form">
+    </div>
+    <input id="done" type="button" value="Done"/>
+    <input id="dump" type="button" value="Dump Stats"/>
+    <input id="reset" type="reset" value="Reset"/>
+    </form>
+    <table>
+      <thead>
+        <tr><th>✅</th><th>❌</th><th>Cnt</th></tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td id="correct">0</td>
+            <td id="incorrect">0</td>
+            <td></td>
+          </tr>
+          <tr>
+              <td id="total-correct">0</td>
+              <td id="total-incorrect">0</td>
+              <td id="total-cnt">0</td>
+          </tr>
+      </tbody>
+    </table>
+    <script src="survey.js"></script>
+  </body>
+</html>
