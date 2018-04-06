@@ -9,29 +9,48 @@
   </head>
   <body>
     <form>
-    <div id="form">
-    </div>
-    <input id="done" type="button" value="Done"/>
-    <input id="dump" type="button" value="Dump Stats"/>
-    <input id="reset" type="reset" value="Reset"/>
+      <div id="form">
+      </div>
+      <input id="done" type="button" value="Done"/>
+      <input id="dump" type="button" value="Dump Stats"/>
+      <input id="reset" type="reset" value="Reset"/>
     </form>
-    <table>
-      <thead>
-        <tr><th>✅</th><th>❌</th><th>Cnt</th></tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td id="correct">0</td>
-            <td id="incorrect">0</td>
-            <td></td>
-          </tr>
-          <tr>
-              <td id="total-correct">0</td>
-              <td id="total-incorrect">0</td>
-              <td id="total-cnt">0</td>
-          </tr>
-      </tbody>
-    </table>
+    <aside>
+      <table>
+        <thead>
+          <tr><th>✅</th><th>❌</th><th>Cnt</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td id="correct">0</td>
+              <td id="incorrect">0</td>
+              <td></td>
+            </tr>
+            <tr>
+                <td id="total-correct">0</td>
+                <td id="total-incorrect">0</td>
+                <td id="total-cnt">0</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <h5>General</h5>
+      <div id="result-general" class="result">
+      </div>
+
+      <h5>HTML</h5>
+      <div id="result-html" class="result">
+      </div>
+
+      <h5>CSS</h5>
+      <div id="result-css" class="result">
+      </div>
+
+      <h5>by Students</h5>
+      <div id="result-student" class="result">
+      </div>
+    <aside>
     <script src="survey.js"></script>
+    <script src="stat.js"></script>
   </body>
 </html>
