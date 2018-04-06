@@ -1,0 +1,82 @@
+/*------------ULOHA 3 A---------------*/
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(0,0,0);
+}
+
+h1 {
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555555;
+}
+/*------------ULOHA 3 B---------------*/
+footer {
+    background-color: #aaaaaa;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 2px solid #dddddd;
+}
+
+footer p a {
+    color: brown;
+}
+/*------------ULOHA 3 C---------------*/
+.img-home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    background-color: #e1e1e1;
+}
+/*------------ULOHA 3 D---------------*/
+header {
+    background-color: #aaaaaa;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.ul-menu {
+    list-style: none;
+}
+
+.ul-menu li {
+    display: inline;
+    margin: 0 50px;
+}
+
+.ul-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: brown;
+}
+/*------------ULOHA 3 E---------------*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: #eeeeee;
+}
