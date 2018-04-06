@@ -3,23 +3,29 @@ Uloha 3A: Flexbox
 - vysvetlit paletu
 - vysvetlit reset, u nas len border-box a body
 
-1. Zopakovat flex, vysvetlit fintu <ul> ako menu, zarovnat menu dolava:
+1. HOME obrazok preteka lebo je velky. Vysvetlit autofit:
+  #home img {
+    width: 100%;
+    height: auto;
+  }
+
+2. Zopakovat flex, vysvetlit fintu <ul> ako menu, zarovnat menu doprava:
   nav {
     ...
     flex-direction: row
     justify-content: flex-end
   }
 
-2. odstranit underline pre vsetky <a>
+3. odstranit underline pre vsetky <a>
   a { text-decoration: none; }
 
-3. podciarkunt nadpis v sekciach:
+4. podciarkunt nadpis v sekciach:
   .flex-item h3 {
     margin-bottom: 4px;
     border-bottom: 1px solid #bbcec8;
   }
 
-4. <footer> tmave pozadie, biele pismo, zarovnat na stred
+5. <footer> tmave pozadie, biele pismo, zarovnat na stred
   footer {
     padding: 5px;
     background-color: #777777;
