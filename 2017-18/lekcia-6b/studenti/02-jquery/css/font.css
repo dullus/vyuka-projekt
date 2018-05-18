@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'our_font_regular';
+  src: url('../font/VWTextWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'our_font_bold';
+  src: url('../font/VWTextWeb-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

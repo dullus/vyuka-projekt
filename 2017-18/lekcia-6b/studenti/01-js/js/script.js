@@ -1,5 +1,3 @@
-const popup = $('#share-article');
+const popup = document.querySelector('#share-article');
 
-$('article').on('click', (evt) => {
-  popup.show();
-});
+// popup.style.display = 'block';

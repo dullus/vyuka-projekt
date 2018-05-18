@@ -1,26 +1,20 @@
-Popup
-* position: fixed
-* z-index
-* top, left: 50% = vycentruje iba na max screen size
-* transform: translate(-50%, -50%); vycentruje na aktualnu velkost
-* vysvetlit preco ikonky riesit vektorovym formatom iconfont/svg
-* vysvetlit vhodnost svg ikoniek pred iconfontom (= prezije nahradu fontov u dislektikov, farby)
-* doplnit buttony pre facebook a twitter
+01-js
+* umiestnenie <script> tagu
+* querySelector, querySelcetorAll - co to je a naco sa pouziva
+* zmena stylu elementu cez JS
+* funkcia, spustenie funkcie v konzole
+* funkcie popupShow, popupHide
+* Eventy, event driven, event listener, event handler
 
-JavaScript
-* intro do javascriptu
-* kde sa da umiestnit <script> tag
+02-jquery
+* pridanie kniznice do <head>
 * intro do $() selectorov
-* ukazanie script.js - popup premenna
-* do popup dame display: none
-* pridanie nasho <script> tagu na koniec a preco
-* click na article otvori popup
 * dorobenie zatvaranie popupu
     $('.popup__close').on('click', () => {
       popup.hide();
     });
 
-JS, SVG + CSS
+03-svg-css
 * vymazeme texty a style v .popup__body
 * vysvetlit dynamicke nahradzovanie dat v popupe
 * pridame scripty na kopirovanie obrazkov, textov do .popup_body
@@ -40,4 +34,4 @@ BLUR
 * pridat do handlerov
   main.addClass('blur');
   main.removeClass('blur');
-* pohrat sa s efektom
+* pohrat sa s efektom v dev tools - ease out atd, zapinat vypinat filter

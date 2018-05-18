@@ -1,0 +1,77 @@
+@media screen and (max-width: 480px) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@320.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@320.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@320.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@320.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@320.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@320.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@320.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@320.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@320.jpg); }
+}
+
+@media
+screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 480px) and (min-resolution: 192dpi) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@640.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@640.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@640.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@640.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@640.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@640.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@640.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@640.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@640.jpg); }
+}
+
+@media screen and (min-width: 481px) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@640.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@640.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@640.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@640.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@640.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@640.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@640.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@640.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@640.jpg); }
+}
+
+@media
+screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 481px) and (min-resolution: 192dpi) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@1280.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@1280.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@1280.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@1280.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@1280.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@1280.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@1280.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@1280.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@1280.jpg); }
+}
+
+@media screen and (min-width: 1200px) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@1280.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@1280.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@1280.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@1280.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@1280.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@1280.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@1280.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@1280.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@1280.jpg); }
+}
+
+@media
+screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .player01 { background-image: url(../img/football/sergio-aguero-@1920.jpg); }
+  .player02 { background-image: url(../img/football/jose-mourinho-@1920.jpg); }
+  .player03 { background-image: url(../img/football/cristiano-ronaldo-@1920.jpg); }
+  .player04 { background-image: url(../img/football/franck-ribery-@1920.jpg); }
+  .player05 { background-image: url(../img/football/karim-benzema-@1920.jpg); }
+  .player06 { background-image: url(../img/football/luis-suarez-@1920.jpg); }
+  .player07 { background-image: url(../img/football/messi-neymar-@1920.jpg); }
+  .player08 { background-image: url(../img/football/zinedine-zidane-@1920.jpg); }
+  .player09 { background-image: url(../img/football/zlatan-ibrahimovic-@1920.jpg); }
+}
