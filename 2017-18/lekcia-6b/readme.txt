@@ -5,6 +5,7 @@
 * funkcia, spustenie funkcie v konzole
 * funkcie popupShow, popupHide
 * Eventy, event driven, event listener, event handler
+* devtools debugging
 
 02-jquery
 * pridanie kniznice do <head>

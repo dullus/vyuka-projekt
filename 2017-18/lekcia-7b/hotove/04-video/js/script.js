@@ -36,15 +36,15 @@ $('#home').on('click', () => {
 });
 
 $('#video').on('click', () => {
+  let iframe = '<iframe id="yt-video" width="100%" height="230" src="https://www.youtube.com/embed/l4ejXyzawaE?rel=0"></iframe>';
   popup.hide();
   main.addClass('blur');
-  videoPopup.find('.popup__body').html(
-'<iframe width="100%" height="230" src="https://www.youtube.com/embed/iZT_Dr59KJ8?rel=0"></iframe>'
-  );
+  videoPopup.find('.popup__body').html(iframe);
   videoPopup.show();
 });
 
 $('#video-popup-close').on('click', () => {
   main.removeClass('blur');
   videoPopup.hide();
+  $('#yt-video').remove();
 });

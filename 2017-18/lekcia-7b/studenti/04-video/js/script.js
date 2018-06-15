@@ -36,7 +36,7 @@ $('#home').on('click', () => {
 });
 
 $('#video').on('click', () => {
-  let iframe = '<iframe width="100%" height="230" src="https://www.youtube.com/embed/iZT_Dr59KJ8?rel=0"></iframe>';
+  let iframe = '<iframe id="yt-video" width="100%" height="230" src="https://www.youtube.com/embed/l4ejXyzawaE?rel=0"></iframe>';
   main.addClass('blur');
 });
 
