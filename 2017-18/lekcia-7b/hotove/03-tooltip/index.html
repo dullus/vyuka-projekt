@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip</title>
+  <link rel="icon" href="img/learn-icon.png" type="png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font.css" type="text/css">
+  <link rel="stylesheet" href="css/images.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/popup.css" type="text/css">
+  <link rel="stylesheet" href="css/anim.css" type="text/css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Tooltip</h1>
+  </header>
+
+  <section class="popup" id="share-article">
+    <header>
+      Share article
+      <span class="popup__close" data-toggle="tooltip" data-placement="top" title="Click to close">
+        <svg version="1.1" class="icon-error" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+          <circle class="icon-error__circle" style="fill:#fa8072;" cx="25" cy="25" r="25"/>
+          <polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16"/>
+          <polyline class="icon-error__cross" style="fill:none;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34"/>
+        </svg>
+      </span>
+    </header>
+    <div class="popup__body">
+      <div class="popup__title">
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+    <footer>
+      <button type="button" class="popup__button">
+        <img src="img/icons/like.svg" alt="like" />
+        <span>Like</span>
+      </button>
+      <button type="button" class="popup__button">
+        <img src="img/icons/facebook.svg" alt="facebook" />
+        <span>Facebook</span>
+      </button>
+      <button type="button" class="popup__button">
+        <img src="img/icons/twitter.svg" alt="twitter" />
+        <span>Twitter</span>
+      </button>
+    </footer>
+  </section>
+
+  <main>
+    <section class="wrapper home-layout">
+
+      <div class="panel__box panel__box--hero">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="player01">
+                <div class="panel__title">
+                  <h2>Sergio Aguero</h2>
+                  <p>Sed dignissim lacus ante, at cursus dui suscipit convallis.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="player10">
+                <div class="panel__title">
+                  <h2>Paul Pogba</h2>
+                  <p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
+                </div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="player11">
+                <div class="panel__title">
+                  <h2>David De Gea</h2>
+                  <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel__box">
+        <article class="player02">
+          <div class="panel__title">
+            <h2>Jose Mourinho</h2>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box panel__box--add panel__box--full">
+          <h2>Ratione Voluptatem Sequi</h2>
+          <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+
+      <div class="panel__box">
+        <article class="player03">
+          <div class="panel__title">
+            <h2>Cristiano Ronaldo</h2>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box panel__box--large flag-new">
+        <article class="player04">
+          <div class="panel__title">
+            <h2>Franck Ribery</h2>
+            <p>Sed dignissim lacus ante, at cursus dui suscipit convallis.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box panel__box--large">
+        <article class="player05">
+          <div class="panel__title">
+            <h2>Karim Benzema</h2>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel__box">
+        <article class="player06">
+          <div class="panel__title">
+            <h2>Luis Suarez</h2>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box">
+        <article class="player07">
+          <div class="panel__title">
+            <h2>Messi and Neymar</h2>
+            <p>Voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box panel__box--small">
+        <article class="player08">
+          <div class="panel__title">
+            <h2>Zinedine Zidane</h2>
+            <p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box">
+        <article class="player09">
+          <div class="panel__title">
+            <h2>Zlatan Ibrahimovic</h2>
+            <p>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel__box panel__box--add panel__box--full">
+          <h2>Corporis Suscipit Laboriosam</h2>
+          <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+            reiciendis voluptatibus maiores alias consequatur aut perferendis
+            doloribus asperiores repellat.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="item">&copy; 2017</span>
+    <span class="divider">::</span>
+    <span class="item"><a id="cookies" href="https://sk.wikipedia.org/wiki/HTTP_cookie" target="_blank">Cookies</a></span>
+    <span class="divider">::</span>
+    <span class="item"><a id="privacy_policy" href="view/privacy-policy.html" target="_self">Privacy Policy</a></span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
